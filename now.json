@@ -1,18 +1,4 @@
 {
   "version": 1,
-  "name": "test",
-  "public": true,
-  "alias": "app.testdeploy.com",
-  "files": [
-    "index.js"
-  ],
-  "scale": {
-    "cdg1": {
-      "min": 1,
-      "max": 1
-    }
-  },
-  "engines": {
-    "node": "^10.0.0"
-  }
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }]
 }
